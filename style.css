@@ -7,6 +7,9 @@
   max-width: 1140px;
   margin: auto;
 }
+body {
+  background-color: #f3f5fc;
+}
 .noto-serif-font {
   font-family: "Noto Serif", serif;
 }
@@ -59,39 +62,120 @@ a {
   align-items: center;
   margin-top: 120px;
 }
-.banner-text{
-    height: 300px;
-    width: 570px;
+.banner-text {
+  height: 300px;
+  width: 570px;
 }
 .banner-title {
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 700;
   color: #000000;
+  margin-bottom: 13px;
 }
 .fresh {
   color: #e95a08;
 }
 .banaer-para {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 400;
 }
-.banner-img img{
-    width: 100%;
+.banner-img img {
+  width: 100%;
 }
+
+/***** Plants Section Styles *****/
+
+.plants-section{
+  margin-bottom: 210px;
+}
+.plants-text {
+  margin-top: 120px;
+  margin-bottom: 49px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.plants-text h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 3.1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.plants-text p {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 77%;
+  height: 53px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+.card {
+  text-align: center;
+}
+.card button {
+  box-sizing: border-box;
+  background-color: rgb(233, 90, 8);
+  color: white;
+  border: none;
+  padding: 26px 50px 26px 50px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card button:hover {
+  background-color: #d35400;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  color: rgb(17, 17, 17);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 30px 69px 20px 69px;
+}
+
+.card p {
+  color: rgb(17, 17, 17);
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 576px) {
   .container {
     max-width: 100%;
     margin: 0px;
   }
+  .navbar {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
   .nav-ul {
     display: none;
   }
-   .banner {
+  .banner {
     flex-direction: column-reverse;
     align-items: center;
     text-align: left;
-    margin-top: 60px; 
+    margin-top: 60px;
   }
   .banner-text {
     width: 100%;
@@ -100,10 +184,34 @@ a {
     padding: 0px 16px 0px 16px;
   }
   .banner-title {
-    font-size: 28px;
+    font-size: 1.75rem;
     width: 65%;
   }
   .banaer-para {
-    font-size: 16px;
+    font-size: 1rem;
   }
+  .plants-section{
+    margin: 0px 15px 40px 5px;
+  }
+  .plants-text p {
+    width: 100%;
+  }
+  .plants-text {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    padding-bottom: 80px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, calc((100% - 20px) / 2));
+    gap: 20px;
+    padding-left: 10px;
+  }
+  .card h3 {
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+  }
+  .card button {
+    padding: 15px 0px;
+  } 
 }
