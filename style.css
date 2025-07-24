@@ -19,7 +19,7 @@ body {
 .Flex {
   display: flex;
 }
-li {
+nav li {
   list-style: none;
 }
 a {
@@ -75,7 +75,7 @@ a {
 .fresh {
   color: #e95a08;
 }
-.banaer-para {
+.banner-para {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.3rem;
   font-weight: 400;
@@ -86,7 +86,7 @@ a {
 
 /***** Plants Section Styles *****/
 
-.plants-section{
+.plants-section {
   margin-bottom: 210px;
 }
 .plants-text {
@@ -122,7 +122,6 @@ a {
   text-align: center;
 }
 .card button {
-  box-sizing: border-box;
   background-color: rgb(233, 90, 8);
   color: white;
   border: none;
@@ -159,6 +158,41 @@ a {
   margin-bottom: 30px;
 }
 
+/***** plants-lover-section styles *****/
+
+.plants-lover-section {
+  gap: 60px;
+  margin-bottom: 130px;
+}
+
+.plants-lover-section-title {
+  font-family: "Noto Serif", serif;
+  color: rgb(0, 0, 0);
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-top: 38px;
+}
+.plants-lover-section-list {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 27px;
+}
+.plants-lover-section-list li {
+  margin: 20px 0px;
+}
+.plants-lover-img {
+  position: relative;
+}
+.trusted-badge {
+  position: absolute;
+  top: -110px;
+  left: 350px;
+  width: 286px;
+  height: 286px;
+}
+
 @media screen and (max-width: 576px) {
   .container {
     max-width: 100%;
@@ -187,10 +221,10 @@ a {
     font-size: 1.75rem;
     width: 65%;
   }
-  .banaer-para {
+  .banner-para {
     font-size: 1rem;
   }
-  .plants-section{
+  .plants-section {
     margin: 0px 15px 40px 5px;
   }
   .plants-text p {
@@ -213,5 +247,30 @@ a {
   }
   .card button {
     padding: 15px 0px;
-  } 
+  }
+  .plants-lover-section {
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .flower-store {
+    width: 100%;
+  }
+  .plants-lover-section-title {
+    margin-top: 18px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    text-align: left;
+  }
+  .plants-lover-section-list li {
+    margin: 16px 0px;
+  }
+  .plants-lover-section-list {
+    font-size: 0.875rem;
+    line-height: 17px;
+  }
+  .trusted-badge {
+    display: none;
+  }
 }
